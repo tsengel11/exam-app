@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-QUESTION_CSV = "/Users/bayartsengel/Projects/test-app/questions.csv"
+QUESTION_CSV = "questions.csv"
 
 # Load your CSV file
 
