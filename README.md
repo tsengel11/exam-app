@@ -16,3 +16,6 @@ This Streamlit-based quiz application helps you practice for the **DP-700: Micro
 ---
 
 ## 📁 File Structure
+
+### How to run
+ `streamlit run app.py`
