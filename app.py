@@ -1,14 +1,14 @@
 import streamlit as st
 import pandas as pd
 
-QUESTION_CSV = "questions.xlsx"  # Path to your CSV file with questions
+QUESTION_CSV = "questions.csv"  # Path to your CSV file with questions
 
 # Load your CSV file
 
 
 # Load and shuffle questions only once
 if "shuffled_questions" not in st.session_state:
-    df = pd.read_excel(QUESTION_CSV)
+    df = pd.read_csv(QUESTION_CSV)
     st.session_state.shuffled_questions = df.sample(frac=1).reset_index(drop=True)
     st.session_state.question_index = 0
     st.session_state.correct_count = 0
